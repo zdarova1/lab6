@@ -15,6 +15,7 @@ int fib(int n)
     int result, F_1, F_2;
 #pragma omp parallel
     {
+        
 #pragma omp single
         {
 #pragma omp task shared(F_1)
